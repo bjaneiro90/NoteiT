@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.app {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    background-color: #ffdead;
+    background: linear-gradient(to right, #fcf3db, #fae7b7)
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+/* .app .container {
+    min-width: 280px;
+    width: 100%;
+    padding: 0 1rem
+} */
