@@ -1,3 +1,6 @@
+
+
+
 .container-one {
     display: flex;
     flex-direction: column;
@@ -5,10 +8,16 @@
     margin-top: 90px;
     background-color: #fff;
     padding-bottom: 30px;
-    border-radius: 6px;
-    height: 600px;
-    width: 580px;
+    border-radius: 9px;
+    height: 550px;
+    width: 410px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+}
+
+.card-front,
+.card-back {
+    height: 100%;
+    width: 100%;
 }
 
 .header {
@@ -113,6 +122,15 @@ i {
     padding-left: 3rem
 }
 
+.eye-div {
+    padding-right: 10px;
+}
+
+.eye-image {
+    padding: 1px;
+    cursor: pointer;
+}
+
 .submit-container a:hover span {
     color:#d48d21;
     cursor: pointer;
@@ -147,4 +165,7 @@ i {
     background-color: #eaeaea;
     color:#d48d21
 }
+
+
+
 

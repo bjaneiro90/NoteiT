@@ -8,6 +8,7 @@
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
+    min-width: 100vh;
     height: 100%;
     background-color: #ffdead;
     background: linear-gradient(to right, #fcf3db, #fae7b7)
