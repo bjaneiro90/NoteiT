@@ -6,6 +6,7 @@ import { Navbar } from './components/Navbar'
 import { NoteCard } from './components/NoteCard'
 import { Login } from './components/Login'
 import LoginSignup from './components/LoginSignup'
+import FlippableCard from './components/Flippable-card'
 
 
 
@@ -23,7 +24,7 @@ function App() {
         </div>
         <div className="notes-wrapper">
             {/* <Login/> */}
-            <LoginSignup/>
+            <FlippableCard/>
 
           </div>
         

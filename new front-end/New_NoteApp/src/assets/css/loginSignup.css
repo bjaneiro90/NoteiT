@@ -1,4 +1,11 @@
-
+.card {
+    position: relative;
+    display: flex;
+    left: 50%;
+    top:50%;
+    transform-style: preserve-3d;
+    transition: 1000ms;
+}
 
 
 .container-one {
@@ -8,16 +15,58 @@
     margin-top: 90px;
     background-color: #fff;
     padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
     border-radius: 9px;
-    height: 550px;
-    width: 410px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    height: 555px;
+    width: 412px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.28);
+}
+
+.flip-exit {
+    transform: rotateY(0deg)
+}
+
+.flip-exit-active {
+    transform: rotateY(180deg);
+    transition: transform 750ms;
+    transition-timing-function: cubic-bezier(0.57, 0.21, 0.69, 1.25);
+}
+
+.flip-exit-done {
+    transform: rotateY(180deg);
+}
+
+.flip-enter {
+    transform: rotateY(180deg)
+}
+
+.flip-enter-active {
+    transform: rotateY(0deg);
+    transition: transform 750ms;
+    transition-timing-function: cubic-bezier(0.57, 0.21, 0.69, 1.25);
+}
+
+.flip-enter-done {
+    transform: rotateY(0deg);
+
 }
 
 .card-front,
 .card-back {
-    height: 100%;
-    width: 100%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.card-back {
+    transform: rotateY(180deg);
 }
 
 .header {
@@ -42,7 +91,7 @@
 }
 
 .social-icons a {
-    box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.3);
     border: 1px solid #ccbc;
     border-radius: 20%;
     display: inline-flex;
@@ -52,7 +101,41 @@
     width: 26px;
     height: 26px;
     color: #ffba51;
+    transition: 300ms ease 0ms;
 }
+
+
+
+.social-icons .iconG:hover{
+    background-color: #dc4e41;
+    color: white;
+    transition: 300ms ease 0ms;
+}
+
+
+
+.social-icons .iconF:hover{
+    background-color: #3b5998;
+    color: white;
+    transition: 300ms ease 0ms;
+}
+
+
+
+.social-icons .iconH:hover{
+    background-color: #000000;
+    color: white;
+    transition: 300ms ease 0ms;
+}
+
+
+.social-icons .iconL:hover{
+    background-color: #0077b5;
+    color: white;
+    transition: 300ms ease 0ms;
+}
+
+
 
 .social-icons a:active{
     box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.35);
@@ -66,7 +149,10 @@
     width: 25px;
     height: 25px;
     color: #ffba51;
+    transition: 0ms linear;
 }
+
+
 
 .underline {
     width: 45px;
@@ -75,12 +161,16 @@
     border-radius: 9px;
 }
 
+
+
 .inputs{
     margin-top: 20px;
     display: flex;
     flex-direction: column;
     gap: 25px;
 }
+
+
 
 .input {
     display: flex;
@@ -112,14 +202,22 @@ i {
     font-size: 14px
 }
 
+.forgot-password-span {
+    display: inline-block;
+    white-space:nowrap;
+}
+
 
 .forgot-password {
-    display: flex;
-    align-items: center;
-    color:#ffba51;
-    margin-top: 25px;
-    font-size: 14px;
-    padding-left: 3rem
+    display: inline-block;
+    font-size: 10px;
+    position: absolute;
+    top: 1;
+    left:0;
+    color:#797979;
+    font-size: 11px;
+    padding-left: 4.73rem;
+    padding-top: 2px
 }
 
 .eye-div {
@@ -131,26 +229,49 @@ i {
     cursor: pointer;
 }
 
-.submit-container a:hover span {
+.submit-container a:hover span{
     color:#d48d21;
     cursor: pointer;
     transition: 400ms ease
 }
 
 
+
 .button-box {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    right: 50%;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 30px;
-    margin: 60px auto ;
+    gap: 28px;
+    margin-top: 30px;
+    padding-bottom: 6px;
     width: 220;
+    white-space: nowrap;
 }
+
+
+
+.footer-login{
+    font-size: 12px;
+    text-align: center;
+      
+}
+
+.footer-login a {
+    color: #ffba51;
+}
+
+
+
 
 .submit {
     border-width: 0.5px;
     border-style: solid;
-    border-color: white;
-    background-color: #ffba51;
+    border-color: #ffba51;
+    background-color: #bdbaba41;
     font-size: 12px;
     padding: 10px 30px 10px;
     border-radius: 50px;
@@ -158,13 +279,19 @@ i {
     letter-spacing: 0.5px;
     text-transform: uppercase;
     cursor: pointer;
-    color: white
+    color: #ffba51;
+    transition: 300ms ease 0ms;
 }
 
-.gray {
-    background-color: #eaeaea;
-    color:#d48d21
+.submit:hover {
+    -webkit-box-shadow:0px 0px 6px 0px rgba(255,185,81,1);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(255,185,81,1);
+    box-shadow: 0px 0px 6px 0px rgba(255,185,81,1);
+    transition: 300ms ease 0ms;
 }
+
+
+
 
 
 
