@@ -48,7 +48,7 @@ export const Navbar = () => {
                             <div className={`dropdown-menu ${open? 'active' : 'inactive'}`}>
                                 <h3>Bruno<br/><span>Web Developer</span></h3>
                                 <ul>
-                                    <DropdownItem img = {user} text = {"My Profile"}/>
+                                    <DropdownItem href="user/account" img = {user} text = {"My Profile"}/>
                                     <DropdownItem img = {edit} text = {"Edit Profile"}/>
                                     <DropdownItem img = {inbox} text = {"Inbox"}/>
                                     <DropdownItem img = {settings} text = {"Settings"}/>

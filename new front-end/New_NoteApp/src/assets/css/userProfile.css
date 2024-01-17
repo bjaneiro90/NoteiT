@@ -1,0 +1,29 @@
+.userProfileIn {
+    display: flex;
+    width: 160vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 12vh;
+    gap: 10px;
+}
+
+
+.userProfileIn .left {
+    width: 14%;
+    height: 75vh;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 5px;
+    min-height: 50vh;
+    background-color: white;
+    margin-left: 0;
+}
+
+.userProfileIn .right {
+    width: 65%;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 5px;
+    min-height: 50vh;
+    background-color: white;
+    height: 100%;
+}

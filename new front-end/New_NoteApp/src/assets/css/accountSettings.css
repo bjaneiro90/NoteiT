@@ -1,0 +1,59 @@
+
+.accountsettings {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+/* .form {
+    column-count: 2;
+} */
+
+
+.column {
+    position: absolute;
+    right: 300px;
+    top: 159px
+}
+
+
+
+.form-group {
+    transition:all .3s;
+}
+
+
+label {
+    font-size: 1em;
+    color: #aaa;
+    display: block;
+    opacity: 1;
+    transform: translateY(-1.5em);
+    transform-origin:0 0;
+    transition: all .3; 
+}
+
+.form-group input {
+    border-color: goldenrod;
+    border-width: 1px;
+    background-color: #eeee;
+    border-radius: 0px;
+    border-style: none none solid none;
+    width: 372px;
+}
+
+.accountsettings h1 {
+    padding: 10px 20px;
+}
+
+
+.accountsettings .form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px 10px 16px;
+    gap: 20px;
+}
