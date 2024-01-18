@@ -8,15 +8,15 @@ export const UserProfile = () => {
 
     const {activepage} = useParams()
 
-    alert(activepage)
+
 
     return (
         <div className='userProfileIn'>
             <div className="left">
-                <UserSideBar/>
+                <UserSideBar activepage={activepage}/>
             </div>
             <div className="right">
-                <AccountSettings/>
+              { activepage === "accountsettings" &&  <AccountSettings/>}            
             </div>
         </div>
     )

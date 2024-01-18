@@ -8,6 +8,7 @@ import settings from "../images/setting.png"
 import help from "../images/help.png"
 import logout from "../images/logout.png"
 import React, { useEffect, useRef, useState } from "react"
+import { Link } from "react-router-dom"
 
 
 export const Navbar = () => {
@@ -47,8 +48,9 @@ export const Navbar = () => {
                         </div>
                             <div className={`dropdown-menu ${open? 'active' : 'inactive'}`}>
                                 <h3>Bruno<br/><span>Web Developer</span></h3>
+                                
                                 <ul>
-                                    <DropdownItem href="user/account" img = {user} text = {"My Profile"}/>
+                                    <DropdownItem img = {user} text = {"My Profile"}/>
                                     <DropdownItem img = {edit} text = {"Edit Profile"}/>
                                     <DropdownItem img = {inbox} text = {"Inbox"}/>
                                     <DropdownItem img = {settings} text = {"Settings"}/>
@@ -73,7 +75,7 @@ function DropdownItem(props) {
     return (
         <li className = 'dropdownItem'>
             <img src={props.img} alt="" />
-            <p href="">{props.text}</p>
+            <p>{props.text}</p>
         </li>
     )
 }

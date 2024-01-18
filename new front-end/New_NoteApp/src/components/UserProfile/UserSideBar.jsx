@@ -1,9 +1,11 @@
 import React from 'react'
 import '../../assets/css/UserSideBar.css'
-import user from "../../images/user.png"
-import note from "../../images/note.png"
+import user from "../../images/userlogin.png"
+import password from "../../images/padlock.png"
+import edit from "../../images/editing.png"
 import avatar from "../../images/man_avatar.png"
-
+import calendar from "../../images/calendar.png"
+import { Link } from 'react-router-dom'
 
 
 export const UserSideBar = ({activepage}) => {
@@ -15,31 +17,83 @@ export const UserSideBar = ({activepage}) => {
         </header>
       <ul>
       {
-        activepage === 'accountsettings' ?
+        activepage === 'myprofile' ?
         <div className="s2">
-          <span>Account </span>
+          <li>
+            <img src= {user}/>
+            <span>My Profile</span>
+          </li>
         </div> 
         :
-      
+        <Link
+        to='/user/myprofile' >
+          <div className="s1">
+              <li>
+                <img src= {user}/>
+                <span>My Profile</span>
+              </li>
+          </div>
+        </Link>
+      }
+
+
+      {
+        activepage === 'accountsettings' ?
+        <div className="s2">
+        <li>
+          <img src= {edit}/>
+          <span>Account Settings</span>
+        </li>
+    </div> 
+        :
+      <Link
+      to='/user/accountsettings'>
         <div className="s1">
             <li>
-              <img src= {user}/>
+              <img src= {edit}/>
               <span>Account Settings</span>
             </li>
         </div>
+      </Link>
       }
+
        {
-        activepage === 'yournotes' ?
+        activepage === 'changepassword' ?
         <div className="s2">
-          <span>My Notes</span>
+           <li>
+              <img src= {password}/>
+              <span>Change Password</span>
+            </li>
         </div> 
         :
-        <div className="s1">
-            <li>
-              <img src= {user}/>
-              <span>My Notes</span>
+        <Link
+        to='/user/changepassword'>
+          <div className="s1">
+              <li>
+                <img src= {password}/>
+                <span>Change Password</span>
+              </li>
+          </div>
+        </Link>
+      }
+      {
+        activepage === 'calendar' ?
+        <div className="s2">
+           <li>
+              <img src= {calendar}/>
+              <span>Calendar</span>
             </li>
-        </div>
+        </div> 
+        :
+        <Link
+          to='/user/calendar'>
+          <div className="s1">
+              <li>
+                <img src= {calendar}/>
+                <span>Calendar</span>
+              </li>
+          </div>
+        </Link>
       }
       </ul>
     </div>
