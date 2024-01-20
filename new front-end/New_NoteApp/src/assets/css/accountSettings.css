@@ -6,9 +6,25 @@
 
 }
 
-/* .form {
-    column-count: 2;
-} */
+.mainhead1 {
+    margin-bottom: none;
+}
+
+
+.profile_edit{
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid goldenrod
+}
+
+
+.profile_img_label{
+    display: flex;
+    padding: 0.5rem 1rem 1rem 2.5rem
+}
+
 
 
 .column {
@@ -19,13 +35,15 @@
 
 
 
+
 .form-group {
     transition:all .3s;
-    padding-top: 10px;
+    padding-top: 15px;
+    padding-left: 10px;
 }
 
 
-label {
+.form_label {
     font-size: 0.80em;
     font-style: italic;
     color: #aaa;
@@ -37,7 +55,7 @@ label {
 }
 
 
-.form-control {
+.form-control{
     color:black;
     border-color: grey;
     border-width: 1px;
@@ -92,4 +110,25 @@ label {
     width: 100%;
     padding: 10px 20px 10px 16px;
     gap: 20px;
+}
+
+
+
+.submit_edit{
+    position: absolute;
+    bottom: 7rem;
+    right: 25rem;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: #ffba51;
+    background-color: #bdbaba41;
+    font-size: 12px;
+    padding: 10px 30px 10px;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #ffba51;
+    transition: 300ms ease 0ms;
 }
