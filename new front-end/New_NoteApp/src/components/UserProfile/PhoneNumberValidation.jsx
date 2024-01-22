@@ -26,14 +26,15 @@ function PhoneNumberValidation() {
               country={'pt'}
               international
               containerStyle={{
-                border:""
+                borderRadius: ""
               }}
               className="input-phone-number" 
               inputStyle={{
                 borderStyle: "none none solid none",
-                borderColor: "gray",
+                borderRadius: "none",
+                borderColor: "goldenrod",
                 width: "100%",
-                color: "goldenrod"
+                color: "black"
               }}
               flagButtonStyle={{color: "white"}}
               inputProps={{required : true}}

@@ -3,11 +3,23 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-
+    height: 560px;
 }
 
 .mainhead1 {
     margin-bottom: none;
+}
+
+#country-list {
+    font-size: 9px;
+}
+
+
+#flag-dropdown {
+    border: none;
+    background-color: white;
+    border-color: goldenrod;
+    
 }
 
 
@@ -98,7 +110,7 @@
 
 
 .accountsettings h1 {
-    padding: 10px 20px;
+    padding: 10px;
 }
 
 

@@ -3,6 +3,7 @@ import UserSideBar from '../../components/UserProfile/UserSideBar'
 import AccountSettings from '../../components/UserProfile/AccountSettings'
 import '../../assets/css/UserProfile.css'
 import { useParams } from 'react-router-dom'
+import MyProfile from '../../components/UserProfile/MyProfile'
 
 export const UserProfile = () => {
 
@@ -16,7 +17,8 @@ export const UserProfile = () => {
                 <UserSideBar activepage={activepage}/>
             </div>
             <div className="right">
-              { activepage === "accountsettings" &&  <AccountSettings/>}            
+              { activepage === "accountsettings" &&  <AccountSettings/>}
+              { activepage === "myprofile" &&  <MyProfile/>}             
             </div>
         </div>
     )
