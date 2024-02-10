@@ -4,6 +4,7 @@ import AccountSettings from '../../components/UserProfile/AccountSettings'
 import '../../assets/css/UserProfile.css'
 import { useParams } from 'react-router-dom'
 import MyProfile from '../../components/UserProfile/MyProfile'
+import Calendar from '../../components/UserProfile/Calendar'
 
 export const UserProfile = () => {
 
@@ -18,7 +19,8 @@ export const UserProfile = () => {
             </div>
             <div className="right">
               { activepage === "accountsettings" &&  <AccountSettings/>}
-              { activepage === "myprofile" &&  <MyProfile/>}             
+              { activepage === "myprofile" &&  <MyProfile/>}  
+              { activepage === "calendar" &&  <Calendar/>} 
             </div>
         </div>
     )

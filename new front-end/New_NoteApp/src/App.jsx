@@ -20,6 +20,7 @@ function App() {
         <Routes>
           <Route path="/user/:activepage" element={<UserProfile/>}/>
           <Route path="/login" element={<FlippableCard/>}/>
+          <Route path="/notes/newnote" element={<NoteCard/>}/>
         </Routes>
       <Footer/>
     </main>

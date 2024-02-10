@@ -1,0 +1,43 @@
+.note-card {
+    width: 28rem;
+    height: 28rem;
+    background-image: url("../../images/notecard.png");
+    background-size: 100%;
+    padding: 0;
+    margin: none;
+}
+
+.form-group-notecard {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+
+.form-group-notecard input::placeholder {
+    color: black;
+    font-style: italic;
+    opacity: 0.4;
+    font-weight:400;
+}
+
+
+.form-group-notecard input:focus::placeholder {
+    color: transparent;
+    transition: 400ms ease 50ms;
+}
+
+
+.form-control-notecard{
+    background-color: transparent;
+    text-align: center;
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.form-control-notecard:focus {
+    box-shadow: none;
+    outline:none;
+}
+
