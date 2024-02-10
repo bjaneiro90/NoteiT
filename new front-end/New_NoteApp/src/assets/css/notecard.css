@@ -2,8 +2,9 @@
     width: 28rem;
     height: 28rem;
     background-image: url("../../images/notecard.png");
+    background-repeat: no-repeat;
     background-size: 100%;
-    padding: 0;
+    padding-top:0;
     margin: none;
 }
 
@@ -11,6 +12,12 @@
     display: flex;
     justify-content: center;
     padding-top: 3rem;
+}
+
+.form-group-notecard-texteditor {
+    display: flex;
+    justify-content: center;
+    padding-top: 1.5rem;
 }
 
 
